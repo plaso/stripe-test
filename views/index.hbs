@@ -1,0 +1,15 @@
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/charge" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_qMU1Hz2iXcnsbhAnCz4xf3Uq"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-amount="2000">
+  </script>
+</form>
